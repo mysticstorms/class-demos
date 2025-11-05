@@ -1,0 +1,41 @@
+/* On mobile: add border around avatar 
+   On desktop (1200px): add border radius 50% to the avatar */
+.avatar{
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    border: 5px lightblue solid;
+}
+
+@media screen and (min-width:1200px){
+    .avatar{
+        border-radius: 50%;
+    }
+}
+/*for screen sizes less than 700px add border to second para with padding 1rem
+
+for screen sizes less than 1000px add bg color to second para */
+
+@media screen and (max-width:700px){
+    .secondpara{
+        border: 2px black;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .secondpara{
+        background-color: lightblue;
+    }
+}
+
+/*make first para disappear 500px up to 700px*/
+
+@media screen and (min-width:500px) and (max-width:700px){
+    .firstpara{
+        display: none;
+
+       /* visibility: hidden; 
+       (hides but the space is still there) */
+    }
+}

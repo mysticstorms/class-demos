@@ -1,0 +1,42 @@
+h1{
+    color: green
+}
+
+/*On Mobile: first para - bg: red, color: white
+On Tab: first para - bg: green, color: white
+On Desktop: first para - bg: lightpink, color: black*/
+
+.firstpara{
+    background-color: red;
+    color: white
+}
+
+@media screen and (min-width:600px){
+    .firstpara{
+        background: green;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .firstpara{
+        background: lightpink;
+        color: black
+    }
+}
+
+/* change the font color to gold for devices bigger than 600px */
+
+@media screen and (min-width:600px){
+    h1{
+        color:gold
+    }
+}
+
+/*change the font size to 3rem of h1 for all the devices bigger than 1200px*/
+
+@media screen and (min-width:1200px){
+    h1{
+        font-size:3rem
+    }
+}
+

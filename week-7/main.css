@@ -1,0 +1,76 @@
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* the star (*) selector applies to all elements on the page */
+
+nav ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 100px;
+    border-right: 1px solid darkgrey
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+.box-model{
+    background-color: #ccc;
+    width: 600px;
+}
+
+.box-model :first-child {
+    width: 300px;
+    background-color: coral;
+
+}
+
+.box-model :last-child {
+    width: 300px;
+    background-color: cadetblue;
+}
+
+.box {
+    float: left;
+    padding: 10px; /* padding inside the border */
+    margin: 20px; /* margin outside the border */
+    border: 4px dotted red; /* border between padding and margin */
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    background-color: lightskyblue;
+    float: left;
+}
+
+/* hr{
+    clear: left;
+}
+
+makes the float stop affecting following elements */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* clearfix class to clear floats in the following elements*/
+
+.stage {
+    height: 100px;
+    width: 100px;
+    background-color: palegreen;
+    /*positioon properties*/
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
