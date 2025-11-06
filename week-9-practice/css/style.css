@@ -1,0 +1,9 @@
+.header-content, .main-content, .side-content, .footer-content{
+    background-color: lightgreen;
+    margin: 1rem 0;
+}
+
+h1, h2{
+    margin: 0;
+    padding: 0;
+}
