@@ -7,3 +7,22 @@ h1, h2{
     margin: 0;
     padding: 0;
 }
+
+.header-content, .footer-content{
+    height: 80px;
+}
+
+.main-content, .side-content{
+    height: 200px;
+}
+
+@media screen and (min 600px){
+    .main-content{
+        width: 70%;
+        float: left;
+    }
+    .side-content{
+        width: 29%;
+        float: right;
+    }
+}
