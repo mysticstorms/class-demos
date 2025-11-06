@@ -1,3 +1,9 @@
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .header-content, .main-content, .side-content, .footer-content{
     background-color: lightgreen;
     margin: 1rem 0;
