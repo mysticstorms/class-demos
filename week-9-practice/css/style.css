@@ -24,11 +24,11 @@ h1, h2{
 
 @media screen and (min 600px){
     .main-content{
-        width: 70%;
+        width: 55%;
         float: left;
     }
     .side-content{
-        width: 29%;
+        width: 25%;
         float: right;
     }
 }
